@@ -17,6 +17,23 @@ When you click the **Knit** button a document will be generated that includes bo
 summary(cars)
 ```
 
+
+
+
+```{r}
+library(gardenR)
+```
+```{r}
+head(mpg)
+```
+
+
+
+
+
+
+
+
 ```{r}
 mpg %>%
   ggplot(aes(x=cty,
@@ -30,6 +47,8 @@ caption="Eyleen & Bello made this")+
   theme_minimal()+
   theme(plot.title.position="plot",
         panel.grid.major.y=element_blank())
+
+
 
 
 
