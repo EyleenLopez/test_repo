@@ -25,7 +25,7 @@ library(gardenR)
 ```
 ```{r}
 head(mpg)
-```
+
 
 
 
