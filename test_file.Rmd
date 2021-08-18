@@ -24,7 +24,7 @@ summary(cars)
 library(gardenR)
 ```
 ```{r}
-head(mpg)
+head(mpg)    
 
 
 
