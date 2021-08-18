@@ -1,0 +1,31 @@
+---
+title: "Four_video_2"
+author: "Eyleen"
+date: "18 de agosto de 2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+
+```
+
+##The Data
+
+
+The `cars` dataset references the speed and stopping distances of cars in the 1920s.
+*Source: `{datasets}´*
+````{r scateerplot}
+data(cars)
+
+#make scatterplot of speed and dist
+
+cars%>%
+  ggplot()+
+  geom_point(aes(x=dist, y=speed))+
+  theme_minimal()+
+  labs(title="Speed vs Stopping Distance",
+       x="Stopping Distance (ft)",
+       y="Speed (MPH)")
